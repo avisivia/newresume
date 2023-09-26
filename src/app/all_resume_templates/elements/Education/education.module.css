@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid;
+
+}
+
+.title_wrap:hover {
+    .button {
+        display: block;
+
+    }
+}
+
+.title {
+    display: flex;
+    width: 380px;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 2px;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.button {
+    width: 40px;
+    height: 30px;
+    margin: 1px;
+    display: none;
+
+}
+
+/* .content {
+    display: flex;
+
+
+} */
+
+.content_with_border {
+    border-top: dotted;
+
+
+}
+
+.content_inside_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content_inside_wrap:hover {
+    .delete_button {
+        display: block;
+    }
+}
+
+
+.inner_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+.delete_button {
+    display: none;
+}
+
+.field {
+    margin: 1px 0px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 8px;
+
+
+}
+
+.university {
+
+    margin: 1px 0px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+
+
+}
+
+.date {
+    display: flex;
+    margin: 1px 0px;
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: 15px;
+    width: 60%;
+
+}
+
+.date input {
+    width: 100%;
+
+}
+
+.to {
+    margin: 0px 20px;
+    margin-right: 30px;
+}
+
+.icon {
+    width: 35px;
+}

@@ -1,0 +1,95 @@
+.page_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.page_container {
+    padding: 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* .make_it_parallel {
+    
+} */
+
+
+@media print {
+    .page_container {
+        margin: auto;
+    }
+}
+
+@page {
+    /* width: 21rem;
+    height: 29.7rem; */
+    size: A4 portrait;
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.black {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    border: solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: white;
+
+
+
+}
+
+.gray {
+    margin: 10px;
+    color: rgb(50, 50, 50);
+    border: solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: white;
+
+}
+
+.blue {
+    margin: 10px;
+    color: rgb(9 9 165);
+    border: solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: white;
+
+}
+
+
+.orange {
+    margin: 10px;
+    color: rgb(207, 59, 0);
+    border: solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: white;
+
+}
+
+.green {
+    margin: 10px;
+    color: rgb(24 119 13);
+    border: solid;
+    border-radius: 100%;
+    border-width: 2px;
+    border-color: white;
+
+}

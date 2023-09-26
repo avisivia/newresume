@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid;
+    margin-bottom: 8px;
+
+
+}
+
+.title {
+    display: flex;
+    max-width: 290px;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 2px;
+    align-items: center;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+
+
+.language li {
+
+    list-style: inside;
+
+}

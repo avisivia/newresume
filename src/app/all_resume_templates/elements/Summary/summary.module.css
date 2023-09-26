@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 452px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid;
+
+}
+
+.title {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 2px;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.summary {
+    margin-top: 10px;
+
+}

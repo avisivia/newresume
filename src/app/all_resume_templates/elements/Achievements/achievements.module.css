@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid;
+    margin-bottom: 8px;
+
+
+}
+
+.title {
+    display: flex;
+    font-weight: 800;
+    max-width: 290px;
+    font-size: x-large;
+    margin-bottom: 2px;
+
+}
+
+.icon {
+    margin-right: 0px;
+}
+
+/* .achievements {
+    display: list-item;
+    list-style: inside;
+} */
+
+.achievements li {
+
+    list-style: inside;
+
+}

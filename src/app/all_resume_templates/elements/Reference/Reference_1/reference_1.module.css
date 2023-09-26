@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0px 5px;
+    padding: 0px 10px;
+    font-size: large;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid;
+
+}
+
+.title {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 2px;
+    align-items: center;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.work_content_wrap {
+    margin-top: 10px;
+}
+
+.company {
+    display: flex;
+    margin: 2px 0px;
+    align-items: center;
+
+
+}

@@ -1,0 +1,10 @@
+.title {
+    display: flex;
+    font-weight: 600;
+    max-width: 300px;
+    font-size: x-large;
+    margin-bottom: 2px;
+    flex-direction: row;
+    align-items: center;
+
+}

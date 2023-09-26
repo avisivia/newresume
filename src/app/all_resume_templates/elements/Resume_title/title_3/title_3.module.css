@@ -1,0 +1,56 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Noto+Serif&family=Russo+One&family=Shippori+Antique+B1&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap'); */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    color: rgb(50, 50, 50);
+
+
+}
+
+
+.title_wrap {
+    height: 100%;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50);
+
+}
+
+.name {
+    min-height: 165px;
+    font-size: 3.8rem;
+    font-weight: 900;
+    line-height: 1;
+    background-color: white;
+    margin-left: 35px;
+    padding-left: 15px;
+
+
+}
+
+.position {
+    border-color: rgb(67, 64, 64);
+    font-size: 1rem;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: .2rem;
+    padding: 10px 5px;
+    color: gray;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    width: 161px;
+}
+
+.photo img {
+    border: solid;
+    border-width: 8px;
+    border-color: rgb(50, 50, 50);
+}

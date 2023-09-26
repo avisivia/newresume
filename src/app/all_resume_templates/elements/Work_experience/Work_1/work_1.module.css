@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 452px;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid;
+
+}
+
+.title {
+    display: flex;
+    min-width: 300px;
+    flex-direction: row;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 2px;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.work_content_wrap {
+    margin-top: 10px;
+}
+
+.position {
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.company {
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.responsibilities {
+    font-weight: 700;
+}
+
+.bullet_points {
+    font-size: 1rem;
+    font-style: italic;
+}
