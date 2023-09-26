@@ -1,6 +1,6 @@
 export default function Not_Found() {
 
     return (
-        <>This page doesn't exist on the website.</>
+        <>This page doesnt exist on the website</>
     )
 }
