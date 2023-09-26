@@ -8,7 +8,9 @@
 .container {
     margin-bottom: 1.2rem;
     display: block;
-    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
 
 
 
@@ -22,7 +24,7 @@
 
 .name {
     font-size: 3.5rem;
-    font-family: 'Inclusive Sans', sans-serif;
+    font-family: unset;
     margin: 1rem 0rem;
     letter-spacing: .2rem;
     font-weight: 800;

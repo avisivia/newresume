@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 450px;
+    max-width: 100%;
     height: auto;
     margin: 5px;
     padding: 10px;
@@ -13,6 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid;
+    width: 100%;
 
 }
 
@@ -25,7 +26,7 @@
 
 .title {
     display: flex;
-    width: 380px;
+    width: 89%;
     font-weight: 800;
     font-size: x-large;
     margin-bottom: 2px;
@@ -37,7 +38,7 @@
 }
 
 .button {
-    width: 40px;
+    width: 10%;
     height: 30px;
     margin: 1px;
     display: none;
@@ -74,7 +75,7 @@
 .inner_content {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 95%;
 
 }
 
