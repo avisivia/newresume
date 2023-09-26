@@ -126,3 +126,12 @@
     display: flex;
     list-style: none;
 }
+
+
+
+
+.drawer_wrap {
+    background-color: white;
+    height: 100vh;
+
+}

@@ -7,27 +7,26 @@ import { FaFileDownload } from "react-icons/fa";
 import React, { useState } from "react";
 import ReactToPrint from "react-to-print";
 import { useSearchParams } from 'next/navigation'
+import Link from "next/link";
+import Image from 'next/image'
 
 const Edit = () => {
 
     const componentRef = React.useRef();
     const params = useSearchParams()
+    const [slider, setSlider] = useState("border:solid")
 
     const component = params.get('resume');
 
-    const [currentComponent, setCurrentComponent] = useState("")
-
     let Edit_component
 
-    if (currentComponent == "1" || component == "1") {
+    if (component == "1") {
         Edit_component = Resume_1
-    } else if (currentComponent == "2" || component == "2") {
+    } else if (component == "2") {
         Edit_component = Resume_2
     } else {
         return (<>this page is not avalable yet</>)
     }
-
-
 
     return (
         <div className={Style.container}>
@@ -68,8 +67,33 @@ const Edit = () => {
 
                 </div>
                 <div className={Style.options} >
-                    <div onClick={() => setCurrentComponent("1")}>resume 1</div>
-                    <div onClick={() => setCurrentComponent("2")}>resume 2</div>
+                    <div className={slider}>
+
+                        <div className={Style.resumes}>
+                            <Link href="/edit_resume?resume=1">
+                                <Image
+                                    height={160}
+                                    width={150}
+                                    src="/resume.png"
+                                    alt="Resume builder"
+
+                                />
+                            </Link>
+                        </div>
+                        <div className={Style.resumes} >
+                            <Link href="/edit_resume?resume=2" className={Style.link}>
+                                <Image
+                                    height={160}
+                                    width={150}
+                                    src="/resume_2.png"
+                                    alt="Resume builder"
+
+                                />
+                            </Link>
+                        </div>
+
+
+                    </div>
 
                 </div>
 
