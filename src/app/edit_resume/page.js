@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import ReactToPrint from "react-to-print";
 import { useSearchParams } from 'next/navigation'
 import Link from "next/link";
-import Image from 'next/image'
+import { Image } from "@nextui-org/react";
 
 const Edit = () => {
 
@@ -72,8 +72,8 @@ const Edit = () => {
                         <div className={Style.resumes}>
                             <Link href="/edit_resume?resume=1">
                                 <Image
-                                    height={160}
-                                    width={150}
+
+                                    width={200}
                                     src="/resume.png"
                                     alt="Resume builder"
 
@@ -83,8 +83,8 @@ const Edit = () => {
                         <div className={Style.resumes} >
                             <Link href="/edit_resume?resume=2" className={Style.link}>
                                 <Image
-                                    height={160}
-                                    width={150}
+
+                                    width={200}
                                     src="/resume_2.png"
                                     alt="Resume builder"
 

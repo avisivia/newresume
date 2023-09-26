@@ -2,6 +2,8 @@ import Style from "./homepage.module.css"
 import { BsPersonVcardFill } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from '@nextui-org/button';
+
 
 const Homepage = () => {
 
@@ -19,9 +21,19 @@ const Homepage = () => {
                     <div className={Style.landingtext_big}>Build a professional resume for free</div>
 
                     <div className={Style.landingtext_small}> Create your resume essily with our free builder and professional templates</div>
-                    <div className={Style.home_page_button2}>
+                    <div
+                        className={Style.home_page_button2}
+                    >
                         <Link href="/choose_resume">
-                            <button>Get Started</button>
+                            <Button
+
+                                color="primary"
+                                variant={"ghost"}
+                                size="lg"
+
+                            >
+                                Get Started
+                            </Button>
                         </Link>
                     </div>
                 </div>
