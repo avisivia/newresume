@@ -3,6 +3,7 @@ import { BsPersonVcardFill } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from '@nextui-org/button';
+import Footer from "../Footer/footer";
 
 
 const Homepage = () => {
@@ -14,7 +15,16 @@ const Homepage = () => {
                     <div className={Style.logo_image}>< BsPersonVcardFill size={30} color={"white"} /></div>
                     <div className={Style.logo_text}>Resume Builder</div>
                 </div>
-                <div className={Style.webbutton}><Link href="/choose_resume"><button>Create Resume</button></Link></div>
+                <div className={Style.webbutton}><Link href="/choose_resume">
+                    <Button
+                        color="secondary"
+                        variant={"ghost"}
+                        size="lg"
+                    >
+                        Create Resume
+                    </Button>
+
+                </Link></div>
             </div>
             <div className={Style.body}>
                 <div className={Style.landingtext}>
@@ -46,6 +56,7 @@ const Homepage = () => {
                     />
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

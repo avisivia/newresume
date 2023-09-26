@@ -1,8 +1,9 @@
 'use client'
 import Style from "./select.module.css"
-import Image from "next/image";
+import { Image } from "@nextui-org/react";
 import { BsPersonVcardFill } from "react-icons/bs";
 import Link from "next/link";
+import Footer from "../Footer/footer";
 
 
 const Select = () => {
@@ -23,8 +24,12 @@ const Select = () => {
                 <div className={Style.head_text}></div>
             </div>
             <div className={Style.body}>
-                <div className={Style.body_title}>These resume templates are great for your role.
-                    Which one would you like to start with?</div>
+                <div className={Style.body_title}>
+                    <div className={Style.body_title_text}>
+                        These resume templates are great for your role.
+                        Which one would you like to start with?
+                    </div>
+                </div>
                 <div className={Style.templates}>
                     <div className={Style.resumes}>
                         <Link href="/edit_resume?resume=1">
@@ -33,7 +38,7 @@ const Select = () => {
                                 src="/resume.png"
                                 alt="Resume builder"
                                 width={300}
-                                height={500}
+
                             />
                         </Link>
                     </div>
@@ -43,7 +48,7 @@ const Select = () => {
                                 src="/resume_2.png"
                                 alt="Resume builder"
                                 width={300}
-                                height={500}
+
                             />
                         </Link>
                     </div>
@@ -53,7 +58,7 @@ const Select = () => {
                                 src="/resume_3.png"
                                 alt="Resume builder"
                                 width={300}
-                                height={500}
+
                             />
                         </Link>
                     </div>
@@ -63,7 +68,7 @@ const Select = () => {
                                 src="/resume_4.png"
                                 alt="Resume builder"
                                 width={300}
-                                height={500}
+
                             />
                         </Link>
                     </div>
@@ -75,6 +80,7 @@ const Select = () => {
 
 
             </div>
+            <Footer />
         </div>)
 }
 

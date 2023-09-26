@@ -20,9 +20,19 @@ module.exports = {
           primary: {
             DEFAULT: "#000000",
             // foreground: "#000000",
+            focus: "#000000",
           },
-          focus: "#000000",
+          secondary: {
+            DEFAULT: "#FFFFFF",
+            foreground: "#000000",
+            focus: "#FFFFFF",
+          },
+
         },
+
+
+
+
       },
     },
   })]

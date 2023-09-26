@@ -9,6 +9,7 @@ import ReactToPrint from "react-to-print";
 import { useSearchParams } from 'next/navigation'
 import Link from "next/link";
 import { Image } from "@nextui-org/react";
+import Footer from "../Footer/footer";
 
 const Edit = () => {
 
@@ -100,6 +101,7 @@ const Edit = () => {
 
 
             </div>
+            <Footer />
         </div>
 
     )
