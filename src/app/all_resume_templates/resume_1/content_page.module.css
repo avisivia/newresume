@@ -39,8 +39,7 @@
 .color {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+    margin: 15px 0px;
 }
 
 

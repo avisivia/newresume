@@ -7,7 +7,7 @@
 .page_container {
     width: 21cm;
     min-height: 29.7cm;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(255, 255, 255);
 
 }
@@ -31,8 +31,7 @@
 }
 
 .contact {
-    width: 29%;
-    margin-top: 20px;
+    width: 28.5%;
     background-color: rgb(50, 50, 50);
     color: white;
 }
@@ -45,8 +44,7 @@
 .color {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 20px;
+    margin: 15px 0px;
 }
 
 @media only screen and (max-width: 550px) {

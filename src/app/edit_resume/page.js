@@ -10,6 +10,7 @@ import { useSearchParams } from 'next/navigation'
 import Link from "next/link";
 import { Image } from "@nextui-org/react";
 import Footer from "../Footer/footer";
+import { Button } from '@nextui-org/button';
 
 const Edit = () => {
 
@@ -54,17 +55,17 @@ const Edit = () => {
                 </div>
                 <div className={Style.edit_component}>
                     <div className={Style.download_button}>
+
                         <ReactToPrint
-                            trigger={() => <FaFileDownload size={40} />}
+                            trigger={() => <FaFileDownload size={50} />}
                             content={() => componentRef.current}
-
-
                         />
 
                     </div>
                     <div className={Style.component} >
                         <Edit_component ref={componentRef} />
                     </div>
+
 
                 </div>
                 <div className={Style.options} >
