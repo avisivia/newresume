@@ -1,5 +1,5 @@
 'use client'
-import Style from "@/app/all_resume_templates/elements/Contact/contact_2/contact_2.module.css";
+import Style from "@/app/all_resume_templates/elements/Contact/contact_1/contact.module.css";
 import { Editor } from 'react-editor'
 import { useEffect, useState } from "react";
 import { TiContacts } from "react-icons/ti";

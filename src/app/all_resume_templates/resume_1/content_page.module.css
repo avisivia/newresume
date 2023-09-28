@@ -99,3 +99,8 @@
     border-color: white;
 
 }
+
+
+.left_row {
+    min-width: 290px;
+}

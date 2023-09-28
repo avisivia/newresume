@@ -20,24 +20,49 @@
 
 .title {
     display: flex;
-    font-weight: 800;
-    max-width: 290px;
+    font-weight: 600;
+    max-width: 280px;
     font-size: x-large;
     margin-bottom: 2px;
+    flex-direction: row;
+    align-items: center;
 
 }
 
 .icon {
-    margin-right: 0px;
+    margin-right: 10px;
 }
 
-/* .achievements {
-    display: list-item;
-    list-style: inside;
-} */
+.achievements_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.achievements li {
+}
 
-    list-style: inside;
 
+.delete_button {
+    display: none;
+
+}
+
+
+.achievements_button:hover {
+    .delete_button {
+        display: block;
+
+    }
+
+}
+
+
+.button {
+    display: none;
+}
+
+.title_wrap:hover {
+
+    .button {
+        display: block;
+    }
 }

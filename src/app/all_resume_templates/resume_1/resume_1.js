@@ -63,13 +63,13 @@ const Content_page = React.forwardRef((props, ref) => {
                 <div><Title color_change={colorRef.current} /></div>
                 <div className={Style.container}>
 
-                    <div className={Style.make_it_parallel}>
+                    <div className={Style.left_row}>
                         <div><Contact_1 color_change={colorRef.current} /></div>
                         <div><Skill_1 color_change={colorRef.current} /></div>
                         <div><Achievements color_change={colorRef.current} /></div>
                         <div><Language_1 color_change={colorRef.current} /></div>
                     </div>
-                    <div className={Style.make_it_parallel}>
+                    <div className={Style.right_row}>
                         <div><Summary color_change={colorRef.current} /></div>
                         <div><Education color_change={colorRef.current} /></div>
                         <div><Work_1 color_change={colorRef.current} /></div>
