@@ -2,7 +2,7 @@
 import Style from "./edit.module.css";
 import Resume_1 from "@/app/all_resume_templates/resume_1/resume_1";
 import Resume_2 from "@/app/all_resume_templates/resume_2/resume_2";
-import { FaFileDownload } from "react-icons/fa";
+import { FaFileDownload, FaWindowClose } from "react-icons/fa";
 import React, { useState } from "react";
 import ReactToPrint from "react-to-print";
 import { useSearchParams } from 'next/navigation'
@@ -54,11 +54,12 @@ const Edit = () => {
             </div>
             <div className={Style.body}>
                 <div className={Style.edit_component}>
+
                     <div className={Style.buttons}>
                         <div className={Style.slider_button}>
                             <Button
                                 color="primary"
-                                variant={"ghost"}
+                                // variant={"ghost"}
                                 size="lg"
                                 onClick={() => IsOpen(true)}
                             >
@@ -76,6 +77,7 @@ const Edit = () => {
 
                     </div>
 
+
                     <div className={Style.component} >
                         <Edit_component ref={componentRef} />
                     </div>
@@ -83,7 +85,11 @@ const Edit = () => {
                 <div className="Drawer">
                     <div className={Style.drawer_container} style={{ right: position }}>
                         <div className={Style.drawer}>
-                            <div className={Style.drawer_heading}>SELECT A TEMPLATE</div>
+                            <div className={Style.drawer_heading}>
+                                <div id="text">SELECT A TEMPLATE</div>
+                                <div id="icon" className={Style.icon} onClick={() => IsOpen(true)}><FaWindowClose size={20} /></div>
+
+                            </div>
                             <div className={Style.drawer_items}>
                                 <div className={Style.items_inside}>
                                     <div className={Style.resumes}>
