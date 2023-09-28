@@ -57,6 +57,17 @@
 
 }
 
+.slider_button {
+    margin-left: 10px;
+}
+
+.download_button {
+    margin-left: 5px;
+
+
+}
+
+
 /* ----------------- Drawer CSS Start-----------------------*/
 
 .drawer_container {

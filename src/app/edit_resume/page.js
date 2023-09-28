@@ -11,6 +11,7 @@ import { Image } from "@nextui-org/react";
 import Footer from "../Footer/footer";
 import { Button } from '@nextui-org/button';
 import Header from "../Header/header";
+import { useRouter } from 'next/navigation';
 
 
 const Edit = () => {
@@ -20,6 +21,7 @@ const Edit = () => {
     const [slider, setSlider] = useState(false)
     const component = params.get('resume');
     let Edit_component
+    const router = useRouter();
 
 
 
@@ -38,11 +40,18 @@ const Edit = () => {
         if (slider == event) {
             setSlider(false)
             setPosition("-250px")
+
         } else {
             setSlider(true)
             setPosition("0")
+
         }
 
+    }
+
+    const clear_local_storage = () => {
+        localStorage.clear()
+        router.refresh()
     }
 
 
@@ -56,6 +65,15 @@ const Edit = () => {
                 <div className={Style.edit_component}>
 
                     <div className={Style.buttons}>
+                        <div className={Style.slider_button}>
+                            <Button
+                                color="primary"
+                                size="lg"
+                                onClick={() => clear_local_storage()}
+                            >
+                                Reset All
+                            </Button>
+                        </div>
                         <div className={Style.slider_button}>
                             <Button
                                 color="primary"

@@ -20,10 +20,11 @@
 
 .title {
     display: flex;
-    max-width: 290px;
     font-weight: 800;
+    max-width: 280px;
     font-size: x-large;
     margin-bottom: 2px;
+    flex-direction: row;
     align-items: center;
 
 }
@@ -32,10 +33,36 @@
     margin-right: 10px;
 }
 
+.languages_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 
 
-.language li {
+.delete_button {
+    display: none;
 
-    list-style: inside;
+}
 
+
+.languages_button:hover {
+    .delete_button {
+        display: block;
+
+    }
+
+}
+
+
+.button {
+    display: none;
+}
+
+.title_wrap:hover {
+
+    .button {
+        display: block;
+    }
 }
