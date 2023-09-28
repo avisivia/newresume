@@ -19,6 +19,8 @@
     display: inline-flex;
     color: black;
     margin-bottom: 100px;
+    max-width: 100%;
+    overflow: auto;
 
 }
 
