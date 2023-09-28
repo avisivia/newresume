@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: row;
     margin: 15px 0px;
+    list-style: none;
 }
 
 
@@ -84,6 +85,7 @@
     border-radius: 100%;
     border-width: 2px;
     border-color: white;
+
 
 }
 

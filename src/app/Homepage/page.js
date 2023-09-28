@@ -36,11 +36,9 @@ const Homepage = () => {
                     >
                         <Link href="/choose_resume">
                             <Button
-
                                 color="primary"
                                 variant={"ghost"}
                                 size="lg"
-
                             >
                                 Get Started
                             </Button>

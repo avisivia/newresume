@@ -1,4 +1,5 @@
 import Style from "@/app/loading.module.css";
+import Header from "../Header/header";
 
 export default function Loading() {
     // You can add any UI inside Loading, including a Skeleton.
