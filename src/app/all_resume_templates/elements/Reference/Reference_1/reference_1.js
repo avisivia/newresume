@@ -245,20 +245,20 @@ export default function Reference_1(props) {
                                                                 onChange={(e) => handle_Reference_phone(e, index, phone_index)}
                                                             />
                                                         </div>
-                                                        <div className={Style.phone_delete_button} onClick={() => handle_delete_phone(index, phone_index)}>-</div>
+                                                        <div className={Style.phone_delete_button} onClick={() => handle_delete_phone(index, phone_index)}><button>-</button></div>
                                                     </div>
                                                 </div>
                                             ))
                                             }
                                         </div>
 
-                                        <div className={Style.phone_add_button} onClick={() => handle_add_phone(index)}>+</div>
+                                        <div className={Style.phone_add_button} onClick={() => handle_add_phone(index)}><button>+</button></div>
 
                                     </div>
                                     {/* ===================   phone code end ================== */}
 
                                 </div>
-                                <div className={Style.delete_person} onClick={() => handle_delete_element(index)}>-</div>
+                                <div className={Style.delete_person} onClick={() => handle_delete_element(index)}><button>-</button></div>
 
 
                             </div>
