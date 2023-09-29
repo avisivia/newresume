@@ -1,28 +1,30 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 0px 5px;
-    padding: 0px 10px;
+    margin: 5px;
+    padding: 10px;
     font-size: large;
 }
 
 .title_wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     border-bottom: solid;
 
+
 }
+
 
 .title {
     display: flex;
-    max-width: 90%;
-    flex-direction: row;
     font-weight: 800;
+    max-width: 280px;
     font-size: x-large;
     margin-bottom: 2px;
+    flex-direction: row;
     align-items: center;
 
 }
@@ -31,14 +33,121 @@
     margin-right: 10px;
 }
 
-.work_content_wrap {
-    margin-top: 10px;
+.button {
+    display: none;
 }
 
-.company {
+.title_wrap:hover {
+
+    .button {
+        display: block;
+    }
+}
+
+.work_content_wrap {
+    width: 100%;
+
+}
+
+.phone {
     display: flex;
     margin: 2px 0px;
     align-items: center;
 
 
+}
+
+
+
+
+
+
+
+
+/* 
+
+.languages_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
+
+/* .delete_button {
+    display: none;
+
+} */
+
+/* 
+.languages_button:hover {
+    .delete_button {
+        display: block;
+
+    }
+
+} */
+
+.person {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.person_with_border {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: dashed;
+    margin: 8px 0;
+    padding-top: 15px;
+
+}
+
+.phone_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.person_and_position {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.reference_inner_text {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.info {
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+.info_seprator {
+    margin-right: 15px;
+}
+
+.phone_wrap_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.phone_text_wrap {
+    display: inline-flex;
+}
+
+.phone_delete_button {
+    margin: 0 15px;
 }
