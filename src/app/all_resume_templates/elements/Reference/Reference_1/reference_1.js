@@ -88,7 +88,6 @@ export default function Reference_1(props) {
     }
 
     const handle_Reference_phone = (event, index, phone_index) => {
-        console.log(event, index, phone_index)
         try {
             let user_old_data = JSON.parse(localStorage.getItem("REFERENCES"))   // Getting data from local storage
             let new_value = event
@@ -117,8 +116,6 @@ export default function Reference_1(props) {
     }
 
     const handle_delete_phone = (index, phone_index) => {
-        console.log(index, phone_index)
-
         try {
             let user_old_data = JSON.parse(localStorage.getItem('REFERENCES'))
             user_old_data[index].phone.splice(phone_index, 1)                                      // Deleting the element according to the index value
