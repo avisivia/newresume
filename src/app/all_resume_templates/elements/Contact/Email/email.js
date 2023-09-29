@@ -10,7 +10,7 @@ export default function Email(props) {
     let [content, setContent] = useState([
 
         {
-            "content": "Email",
+            "content": "",
 
         },
     ])

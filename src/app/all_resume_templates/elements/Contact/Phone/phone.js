@@ -10,7 +10,7 @@ export default function Phone(props) {
     let [content, setContent] = useState([
 
         {
-            "content": "Phone",
+            "content": "",
 
         },
     ])

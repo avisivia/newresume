@@ -127,11 +127,7 @@
 
 .info {
     display: inline-flex;
-    margin-right: 15px;
-}
-
-.info_seprator {
-    margin-right: 15px;
+    margin-right: 40px;
 }
 
 .phone_wrap_content {
@@ -151,3 +147,9 @@
 .phone_delete_button {
     margin: 0 15px;
 }
+
+/* 
+
+.info_seprator {
+    margin-right: 5px;
+} */

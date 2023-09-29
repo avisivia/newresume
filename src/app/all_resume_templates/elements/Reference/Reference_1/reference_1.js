@@ -200,6 +200,7 @@ export default function Reference_1(props) {
                                 <div className={Style.person_info}>
                                     <div className={Style.person_and_position}>
                                         <div className={Style.info}>
+                                            {/* <div className={Style.info_seprator}>|</div> */}
                                             <div className={Style.reference_inner_text}>Name:</div>
 
                                             <Editor
@@ -212,7 +213,7 @@ export default function Reference_1(props) {
                                         </div>
 
                                         <div className={Style.info}>
-                                            <div className={Style.info_seprator}>|</div>
+                                            {/* <div className={Style.info_seprator}>|</div> */}
                                             <div className={Style.reference_inner_text}>Position:</div>
                                             <Editor
                                                 title={item.position}
