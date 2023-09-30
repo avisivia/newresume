@@ -102,5 +102,10 @@
 
 
 .left_row {
-    min-width: 290px;
+    width: 40%;
+}
+
+.right_row {
+    width: 60%;
+
 }

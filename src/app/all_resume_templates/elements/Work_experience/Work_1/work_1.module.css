@@ -72,6 +72,7 @@
 .work_content {
     display: inline-flex;
     flex-direction: column;
+    width: 90%;
 }
 
 .position_date {
@@ -81,6 +82,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    overflow: hidden;
 
 }
 
@@ -95,6 +97,7 @@
     font-weight: 700;
     width: 100%;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .bullet_points_wrap {
@@ -111,11 +114,12 @@
 
 .position {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .company {
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 
@@ -130,3 +134,51 @@
 .bullets {
     margin-right: 10px;
 }
+
+
+
+/* ===========  button display on - off start ============= */
+
+
+.responsibility_add_button {
+    display: none;
+}
+
+.responsibilities_full_wrap:hover {
+    .responsibility_add_button {
+        display: block;
+    }
+
+}
+
+.bullet_points_delete_button {
+    display: none;
+}
+
+.bullet_points_wrap:hover {
+    .bullet_points_delete_button {
+        display: block;
+    }
+
+}
+
+.work_delete {
+    display: none;
+
+}
+
+.work_content_wrap_with_border:hover {
+    .work_delete {
+        display: block;
+    }
+}
+
+.work_content_wrap:hover {
+    .work_delete {
+        display: block;
+    }
+
+}
+
+
+/* ===========  button display on - off End ============= */

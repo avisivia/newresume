@@ -20,7 +20,7 @@ export default function Education(props) {
         },
         {
             "field_content": "",
-            "field_place_holder": "Write your study field",
+            "field_place_holder": "Specify your field of study",
             "university_content": "",
             "university_place_holder": "School or University Name",
             "start_date": startDate.toString(),

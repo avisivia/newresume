@@ -242,7 +242,7 @@ export default function Work_1(props) {
                                         <div className={Style.start_date}>
                                             <Editor
                                                 title={item.start_date}
-                                                placeholder={"start-date"}
+                                                placeholder={"Start-date"}
                                                 value={item.start_date}
                                                 onChange={(e) => handle_Work_start_date(e, index)}
                                             />
@@ -251,7 +251,7 @@ export default function Work_1(props) {
                                         <div className={Style.end_date}>
                                             <Editor
                                                 title={item.end_date}
-                                                placeholder={"end-date"}
+                                                placeholder={"End-date"}
                                                 value={item.end_date}
                                                 onChange={(e) => handle_Work_end_date(e, index)}
                                             />
@@ -272,7 +272,7 @@ export default function Work_1(props) {
                                 {/* ===================   responsibilities code start ================== */}
 
                                 {item.responsibilities ? (item.responsibilities.map((responsibility_item, responsibility_index) => (
-                                    <div key={responsibility_index}>
+                                    <div key={responsibility_index} className={Style.responsibilities_full_wrap}>
 
                                         {responsibility_index == 0 ? (
                                             <div className={Style.responsibilities}>
