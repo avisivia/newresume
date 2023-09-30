@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 5px;
     padding: 10px;
@@ -10,19 +10,22 @@
 
 .title_wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     border-bottom: solid;
+
 
 }
 
 .title {
     display: flex;
-    min-width: 300px;
-    flex-direction: row;
     font-weight: 800;
+    max-width: 90%;
     font-size: x-large;
     margin-bottom: 2px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
 
 }
 
@@ -30,25 +33,100 @@
     margin-right: 10px;
 }
 
-.work_content_wrap {
-    margin-top: 10px;
+.button {
+    display: none;
+    width: 10%;
 }
 
+.title_wrap:hover {
+
+    .button {
+        display: block;
+    }
+}
+
+
+
+
+
+.work_content_wrap {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.work_content_wrap_with_border {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-top: dotted;
+    padding: 10px 0;
+
+}
+
+.work_content {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.position_date {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.date {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.responsibilities {
+    display: inline-flex;
+    flex-direction: row;
+    font-weight: 700;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bullet_points_wrap {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bullet_points {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
 .position {
-    font-weight: 500;
-    margin: 5px 0px;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .company {
     font-weight: 400;
-    margin: 5px 0px;
+}
+
+
+.bullet_points_delete_button {
+    margin-left: 15px;
 }
 
 .responsibilities {
-    font-weight: 700;
+    margin-top: 10px;
 }
 
-.bullet_points {
-    font-size: 1rem;
-    font-style: italic;
+.bullets {
+    margin-right: 10px;
 }

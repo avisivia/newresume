@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import { GoCrossReference } from "react-icons/go";
 import { FaSquarePhone } from "react-icons/fa6";
 
-
-
 export default function Reference_1(props) {
 
     let [content, setContent] = useState([
@@ -18,7 +16,6 @@ export default function Reference_1(props) {
             "name": "",
             "position": "",
             "phone": [{ "Number": "" },],
-
         },
     ])
 
@@ -32,7 +29,6 @@ export default function Reference_1(props) {
             console.log(error)
 
         }
-
 
     }, [1])
 
@@ -61,7 +57,6 @@ export default function Reference_1(props) {
             console.log(error)
         }
     }
-
 
     const handle_Reference_name = (event, index) => {
         try {
