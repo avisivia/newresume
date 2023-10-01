@@ -220,7 +220,7 @@ export default function Education(props) {
                                 <div className={Style.date}>
                                     <DatePicker
                                         selected={new Date(item.start_date)}
-
+                                        dateFormat={["dd-MM-yyyy"]}
                                         onChange={(date) => handle_start_date(date, index)}
 
                                     />
@@ -228,6 +228,7 @@ export default function Education(props) {
 
                                     <DatePicker
                                         selected={new Date(item.end_date)}
+                                        dateFormat={["dd-MM-yyyy"]}
                                         onChange={(date) => handle_end_date(date, index)}
                                     /></div>
                             </div>

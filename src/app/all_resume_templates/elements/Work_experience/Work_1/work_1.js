@@ -4,8 +4,13 @@ import { Editor } from 'react-editor'
 import { useEffect, useState } from "react";
 import { IoIosContact } from "react-icons/io";
 import { BiSolidRightArrowCircle } from "react-icons/bi";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function Work_1(props) {
+
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date());
 
     let [content, setContent] = useState([
 
@@ -14,8 +19,8 @@ export default function Work_1(props) {
         },
         {
             "position": "",
-            "start_date": "",
-            "end_date": "",
+            "start_date": startDate.toString(),
+            "end_date": endDate.toString(),
             "company_name": "",
             "responsibilities": [{ "heading": "JOB RESPONSIBILITIES" }, { "Responsibility": "" }],
         },
@@ -76,10 +81,10 @@ export default function Work_1(props) {
     const handle_Work_start_date = (event, index) => {
         try {
             let user_old_data = JSON.parse(localStorage.getItem("WORK"))   // Getting data from local storage
-            let new_value = event
+            let new_value = event.toString()
             user_old_data[index].start_date = new_value
             localStorage.setItem("WORK", JSON.stringify(user_old_data))   // Storing new data to local storage
-
+            reload()
         } catch (error) {
             console.log(error)
         }
@@ -88,10 +93,10 @@ export default function Work_1(props) {
     const handle_Work_end_date = (event, index) => {
         try {
             let user_old_data = JSON.parse(localStorage.getItem("WORK"))   // Getting data from local storage
-            let new_value = event
+            let new_value = event.toString()
             user_old_data[index].end_date = new_value
             localStorage.setItem("WORK", JSON.stringify(user_old_data))   // Storing new data to local storage
-
+            reload()
         } catch (error) {
             console.log(error)
         }
@@ -103,7 +108,6 @@ export default function Work_1(props) {
             let new_value = event
             user_old_data[index].company_name = new_value
             localStorage.setItem("WORK", JSON.stringify(user_old_data))   // Storing new data to local storage
-
         } catch (error) {
             console.log(error)
         }
@@ -171,8 +175,8 @@ export default function Work_1(props) {
         let newField =
         {
             "position": "",
-            "start_date": "",
-            "end_date": "",
+            "start_date": startDate.toString(),
+            "end_date": endDate.toString(),
             "company_name": "",
             "responsibilities": [{ "heading": "JOB RESPONSIBILITIES" }, { "Responsibility": "" }],
         }
@@ -240,20 +244,26 @@ export default function Work_1(props) {
                                     </div>
                                     <div className={Style.date}>
                                         <div className={Style.start_date}>
-                                            <Editor
-                                                title={item.start_date}
-                                                placeholder={"Start-date"}
-                                                value={item.start_date}
-                                                onChange={(e) => handle_Work_start_date(e, index)}
+                                            <DatePicker
+                                                selected={new Date(item.start_date)}
+                                                dateFormat="MM/yyyy"
+                                                showMonthYearPicker
+                                                className={Style.date_picker}
+                                                onChange={(date) => handle_Work_start_date(date, index)}
                                             />
                                         </div>
-                                        <>-</>
+                                        <div className={Style.to}>-</div>
                                         <div className={Style.end_date}>
-                                            <Editor
-                                                title={item.end_date}
-                                                placeholder={"End-date"}
-                                                value={item.end_date}
-                                                onChange={(e) => handle_Work_end_date(e, index)}
+                                            <DatePicker
+                                                todayButton="Today"
+                                                selected={new Date(item.end_date)}
+                                                dateFormat="MM/yyyy"
+                                                showMonthYearPicker
+
+
+                                                className={Style.date_picker}
+                                                onChange={(date) => handle_Work_end_date(date, index)}
+
                                             />
                                         </div>
                                     </div>
@@ -298,7 +308,7 @@ export default function Work_1(props) {
                                                 <div className={Style.bullet_points}>
                                                     <Editor
                                                         title={responsibility_item.Responsibility}
-                                                        placeholder={"Add your previous responsibilities here."}
+                                                        placeholder={"Include your prior duties and tasks."}
                                                         value={responsibility_item.Responsibility}
                                                         onChange={(e) => handle_responsibilities(e, index, responsibility_index)}
                                                     />

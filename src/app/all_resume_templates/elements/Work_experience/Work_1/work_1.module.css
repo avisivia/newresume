@@ -86,11 +86,6 @@
 
 }
 
-.date {
-    display: inline-flex;
-    flex-direction: row;
-}
-
 .responsibilities {
     display: inline-flex;
     flex-direction: row;
@@ -182,3 +177,28 @@
 
 
 /* ===========  button display on - off End ============= */
+
+
+
+/* .date_picker {
+    width: 40%;
+} */
+
+.date {
+    display: flex;
+    margin: 1px 0px;
+    font-weight: 400;
+    font-size: large;
+    font-style: italic;
+    width: 42%;
+
+}
+
+.date input {
+    width: 100%;
+
+}
+
+.to {
+    margin-right: 8px;
+}

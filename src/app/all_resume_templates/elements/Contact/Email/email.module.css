@@ -56,3 +56,9 @@
         display: block;
     }
 }
+
+
+.text {
+    overflow: hidden;
+    width: 100%;
+}

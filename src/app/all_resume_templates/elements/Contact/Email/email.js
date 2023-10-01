@@ -89,6 +89,7 @@ export default function Email(props) {
                             <div className={Style.icon} style={{ color: props.new_color }}>
                                 <MdOutlineAlternateEmail size={20} />
                             </div>
+
                             <Editor
                                 title={item.content}
                                 placeholder={"Email"}
@@ -96,6 +97,7 @@ export default function Email(props) {
                                 value={item.content}
                                 onChange={(e) => handle_Email(e, index)}
                             />
+
                             <div className={Style.delete_button}>
                                 <button onClick={() => handle_delete_email(index)}>-</button>
 
