@@ -5,12 +5,11 @@
 }
 
 .page_container {
-    padding: 10px;
+    padding: 20px;
     color: black;
     background-color: rgb(255, 255, 255);
     width: 21cm;
-    height: 29.7cm;
-
+    height: 27.9cm;
 }
 
 .container {
@@ -25,17 +24,24 @@
 } */
 
 
+@page: left {
+    /* width: 21rem;*/
+    /* height: 29.7rem; */
+    size: A4 portrait;
+    margin: .5cm;
+}
+
 @media print {
     .page_container {
         margin: auto;
+        /* break-after: page; */
+        /* padding: 50px;
+        border: solid; */
+
     }
 }
 
-@page {
-    /* width: 21rem;
-    height: 29.7rem; */
-    size: A4 portrait;
-}
+
 
 .color {
     display: flex;

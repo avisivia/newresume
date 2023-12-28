@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* margin: 5px;
+    padding: 10px; */
+    font-size: small;
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: medium;
+    margin-bottom: 2px;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.summary {
+    margin-top: 10px;
+    text-justify: distribute;
+
+}

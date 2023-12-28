@@ -36,8 +36,32 @@
     color: white;
 }
 
-.about_me {
+.make_it_parallel_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
     margin-top: 20px;
+    width: 33%;
+
+
+}
+
+.left_inner_box {
+    background-color: rgb(222, 220, 220);
+    padding: 20px;
+    border-radius: 4px;
+
+}
+
+.right {
+    margin-top: 20px;
+
+    width: 65%;
+
+
 }
 
 

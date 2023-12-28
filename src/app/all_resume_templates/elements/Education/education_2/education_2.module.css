@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: auto; */
+    /* margin: 5px;
+    padding: 10px; */
+    /* font-size: medium; */
+}
+
+.title_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 100%; */
+
+}
+
+.title_wrap:hover {
+    .button {
+        display: flex;
+        width: 5%;
+
+    }
+}
+
+.title {
+    display: flex;
+    width: 89%;
+    font-weight: 600;
+    font-size: larger;
+    margin-bottom: 2px;
+    align-items: center;
+
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.button {
+    width: 10%;
+    height: 30px;
+    margin: 1px;
+    display: none;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+}
+
+/* .content_with_border {
+    border-top: dotted;
+
+
+} */
+
+
+.content_inside_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 2px 5px;
+    justify-content: space-between;
+
+}
+
+.inner_content {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.delete_button {
+    display: none;
+
+}
+
+.content_inside_wrap:hover {
+
+    .delete_button {
+        display: block;
+    }
+}
+
+
+
+.field {
+
+    font-weight: 700;
+    font-size: 1.1rem;
+
+
+
+}
+
+.university {
+
+    margin: 1px 0px;
+    font-weight: 500;
+    /* font-size: 1.1rem; */
+    margin-bottom: 3px;
+
+
+}
+
+.date {
+    display: flex;
+    margin: 1px 0px;
+    font-weight: 400;
+    font-size: small;
+    /* width: 60%; */
+
+}
+
+.date input {
+    /* width: 100%; */
+
+}
+
+.to {
+    /* margin: 0px 20px; */
+    margin-right: 17px;
+}
+
+.icon {
+    width: 35px;
+}

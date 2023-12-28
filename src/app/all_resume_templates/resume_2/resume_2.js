@@ -3,6 +3,8 @@ import Title_3 from "../elements/Resume_title/title_3/title_3";
 import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { BsFillCircleFill, BsFillCheckCircleFill } from "react-icons/bs";
 import Contact_2 from "../elements/Contact/contact_2/contact_2";
+import Summary from "../elements/Summary/about_2/about_2";
+import Education from "../elements/Education/education_2/education_2";
 
 
 const Resume_2 = React.forwardRef((props, ref) => {
@@ -59,9 +61,22 @@ const Resume_2 = React.forwardRef((props, ref) => {
 
 
                     </div>
-                    <div className={Style.about_me}>
-                        {/* About Me */}
+                    <div className={Style.make_it_parallel_2}>
+
+                        <div className={Style.left} >
+                            <div className={Style.left_inner_box}>
+                                <Summary color_change={colorRef.current} />
+                            </div>
+
+                        </div>
+                        <div className={Style.right} >
+                            <Education color_change={colorRef.current} />
+
+                        </div>
+
+
                     </div>
+
 
                 </div>
             </div>

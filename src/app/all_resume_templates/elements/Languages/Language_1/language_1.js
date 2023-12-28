@@ -8,6 +8,7 @@ import { BsFillChatSquareTextFill } from "react-icons/bs";
 
 export default function Language_1(props) {
 
+
     let [content, setContent] = useState([
         {
             "content": "LANGUAGES",

@@ -1,8 +1,8 @@
 'use client'
-import Style from "@/app/all_resume_templates/elements/Education/education.module.css";
+import Style from "@/app/all_resume_templates/elements/Education/education_2/education_2.module.css";
 import { Editor } from 'react-editor'
 import { useEffect, useState } from "react"
-import { PiStudentFill } from "react-icons/pi";
+import { IoSchoolSharp } from "react-icons/io5";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -176,7 +176,7 @@ export default function Education(props) {
             <div className={Style.title_wrap} style={{ color: props.color_change }}>
                 <div className={Style.title}>
                     <div className={Style.icon}>
-                        <PiStudentFill size={35} className={Style.icon} />
+                        <IoSchoolSharp size={35} className={Style.icon} />
                     </div>
                     <Editor
                         title={content[0].key}
@@ -197,52 +197,55 @@ export default function Education(props) {
             </div>
 
 
-            {content.map((item, index) => (
-                <div key={index} className={index > 1 ? (Style.content_with_border) : (Style.content)}>
-                    {index != 0 ? (
-                        <div className={Style.content_inside_wrap}>
-                            <div className={Style.inner_content}>
-                                <Editor
-                                    title={item.field_content}
-                                    placeholder={item.field_place_holder}
-                                    className={Style.field}
-                                    value={item.field_content}
-                                    onChange={(e) => handle_education_field(e, index)}
-                                />
-
-                                <Editor
-                                    title={item.university_content}
-                                    placeholder={item.university_place_holder}
-                                    className={Style.university}
-                                    value={item.university_content}
-                                    onChange={(e) => handle_University(e, index)}
-                                />
-                                <div className={Style.date}>
-                                    <DatePicker
-                                        selected={new Date(item.start_date)}
-                                        dateFormat={["dd-MM-yyyy"]}
-                                        onChange={(date) => handle_start_date(date, index)}
-
+            <div className={Style.content}>
+                {content.map((item, index) => (
+                    <div key={index}>
+                        {index != 0 ? (
+                            <div className={Style.content_inside_wrap}>
+                                <div className={Style.inner_content}>
+                                    <Editor
+                                        title={item.field_content}
+                                        placeholder={item.field_place_holder}
+                                        className={Style.field}
+                                        value={item.field_content}
+                                        onChange={(e) => handle_education_field(e, index)}
                                     />
-                                    <div className={Style.to}>-</div>
 
-                                    <DatePicker
-                                        selected={new Date(item.end_date)}
-                                        dateFormat={["dd-MM-yyyy"]}
-                                        onChange={(date) => handle_end_date(date, index)}
-                                    /></div>
+                                    <Editor
+                                        title={item.university_content}
+                                        placeholder={item.university_place_holder}
+                                        className={Style.university}
+                                        value={item.university_content}
+                                        onChange={(e) => handle_University(e, index)}
+                                    />
+                                    {/* <div className={Style.date}>
+                                        <DatePicker
+                                            selected={new Date(item.start_date)}
+                                            dateFormat={["dd-MM-yyyy"]}
+                                            onChange={(date) => handle_start_date(date, index)}
+
+                                        />
+                                        <div className={Style.to}>-</div>
+
+                                        <DatePicker
+                                            selected={new Date(item.end_date)}
+                                            dateFormat={["dd-MM-yyyy"]}
+                                            onChange={(date) => handle_end_date(date, index)}
+                                        />
+                                    </div> */}
+                                </div>
+                                <div><button onClick={() => handle_delete_element(index)} className={Style.delete_button}>-</button></div>
+
                             </div>
-                            <div><button onClick={() => handle_delete_element(index)} className={Style.delete_button}>-</button></div>
-
-                        </div>
 
 
 
-                    ) : (<></>)}
+                        ) : (<></>)}
 
-                </div>
+                    </div>
 
-            ))}
+                ))}
+            </div>
 
 
 

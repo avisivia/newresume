@@ -98,6 +98,7 @@ const Edit = () => {
 
                     <div className={Style.component} >
                         <Edit_component ref={componentRef} />
+
                     </div>
                 </div>
                 <div className="Drawer">
