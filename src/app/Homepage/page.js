@@ -28,7 +28,7 @@ const Homepage = () => {
             </div>
             <div className={Style.body}>
                 <div className={Style.landingtext}>
-                    <div className={Style.landingtext_big}>Build a professional resume for free TESTING</div>
+                    <div className={Style.landingtext_big}>Build a professional resume for free TESTING New</div>
 
                     <div className={Style.landingtext_small}> Create your resume essily with our free builder and professional templates</div>
                     <div
